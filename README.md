@@ -1,3 +1,7 @@
+A fork of Maarten Slagter's fork of LOHHLA. With various fixes needed to run LOHHLA in a
+singularity container on our local cluster.
+
+
 This is a fork of the original LOHHLA repository by Maarten Slagter, PhD student at the 
 Netherlands Cancer Institute. Edits are intended to facilitate usage and interpretation of 
 the program and make it more robust to various problems, while keeping the core 
@@ -26,7 +30,7 @@ Currently, the major additions include:
 * More error checks and robustness -- although there's probably still room for improvement 
   here
 * More informative tabular output. The added 'message' column will display why certain 
-  alleles may have failed, so you donøt necessarily have to go through the log files in 
+  alleles may have failed, so you don¬øt necessarily have to go through the log files in 
   case a sample/allele fails (due to e.g. homozygosity or lack of coverage in the matched 
   normal bam)
 * Solved some potential numerical problems in the code, e.g. I encountered a division 
@@ -58,7 +62,7 @@ data.
 ### LICENCE ###
 
 LOHHLA IS PROTECTED BY COPYRIGHT AND IS SUBJECT TO A PATENT APPLICATION.  THE TOOL IS 
-PROVIDED ìAS ISî FOR INTERNAL NON-COMMERCIAL ACADEMIC RESEARCH PURPOSES ONLY.   NO 
+PROVIDED ‚ÄúAS IS‚Äù FOR INTERNAL NON-COMMERCIAL ACADEMIC RESEARCH PURPOSES ONLY.   NO 
 RESPONSIBILITY IS ACCEPTED FOR ANY LIABILITY ARISING FROM SUCH USE BY ANY THIRD PARTY.  
 COMMERCIAL USE OF THIS TOOL FOR ANY PURPOSE IS NOT PERMITTED.  ALL COMMERCIAL USE OF THE 
 TOOL INCLUDING TRANSFER TO A COMMERCIAL THIRD PARTY OR USE ON BEHALF OF A COMMERCIAL THIRD 
