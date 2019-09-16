@@ -404,7 +404,7 @@ getMisMatchPositionsPairwiseAlignment <- function(alignment,
 
 
 getUniqMapReads <- function(workDir, BAMDir, override = FALSE,
-  tumorBAMfile, normalBAMfile, overrideDir = NULL, samtools, forceRedo) {
+  tumorBAMfile, normalBAMfile, overrideDir = NULL, samtools, forceRedo = FALSE) {
   if (!override) {
     outDir <- paste(workDir, '/flagstat/', sep = '')
     if (!file.exists(outDir)) {
