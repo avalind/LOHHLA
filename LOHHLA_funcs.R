@@ -404,7 +404,7 @@ getMisMatchPositionsPairwiseAlignment <- function(alignment,
 
 
 getUniqMapReads <- function(workDir, BAMDir, override = FALSE,
-  tumorBAMfile, normalBAMfile, overrideDir = NULL, samtools) {
+  tumorBAMfile, normalBAMfile, overrideDir = NULL, samtools, forceRedo) {
   if (!override) {
     outDir <- paste(workDir, '/flagstat/', sep = '')
     if (!file.exists(outDir)) {
@@ -1155,11 +1155,11 @@ run_LOHHLA <- function(opt) {
       sample_uniq_mapped_reads <-
         getUniqMapReads(workDir = workDir, BAMDir = BAMDir,
           tumorBAMfile = tumorBAMfile, normalBAMfile = normalBAMfile,
-          override = FALSE, samtools = samtools)
+          override = FALSE, samtools = samtools, forceRedo)
     } else {
       sample_uniq_mapped_reads <- getUniqMapReads(workDir = workDir,
         BAMDir = BAMDir, override = TRUE, overrideDir = overrideDir, 
-        samtools = samtools)
+        samtools = samtools, forceRedo)
     }
 
     ## In case of multiple normal samples, reduce to the best normal sample
