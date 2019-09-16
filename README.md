@@ -1,6 +1,7 @@
 A fork of Maarten Slagter's fork of LOHHLA. With various fixes needed to run LOHHLA in a
 singularity container on our local cluster.
 
+---
 
 This is a fork of the original LOHHLA repository by Maarten Slagter, PhD student at the 
 Netherlands Cancer Institute. Edits are intended to facilitate usage and interpretation of 
